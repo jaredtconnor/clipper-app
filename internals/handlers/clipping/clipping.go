@@ -4,7 +4,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
 	"github.com/jaredtconnor/clipper-app/database"
-	"github.com/jaredtconnor/clipper-app/internal/model"
+	"github.com/jaredtconnor/clipper-app/internals/model"
 )
 
 func GetClippings(c *fiber.Ctx) error {

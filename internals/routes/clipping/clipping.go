@@ -2,25 +2,27 @@ package clippingRoutes
 
 import (
 	"github.com/gofiber/fiber/v2"
-	clippingHandler "github.com/jaredtconnor/clipper-app/internal/handlers/clipping"
+
+	clippingHandler "github.com/jaredtconnor/clipper-app/internals/handlers/clipping"
 )
 
 func SetupClippingRoutes(router fiber.Router) {
 
 	clipping := router.Group("/clipping")
 
-	// Create a clipping
+	//Creating clipping
 	clipping.Post("/", clippingHandler.CreateClipping)
 
-	// read all clippings
+	// Read all clippings
 	clipping.Get("/", clippingHandler.GetClippings)
 
-	// Read specific clipping
+	// Read one note
 	clipping.Get("/:clippingId", clippingHandler.GetClipping)
 
-	// Updated specific clipping
+	// Update one clipping
 	clipping.Put("/:clippingId", clippingHandler.UpdateClipping)
 
-	// Delete specific clipping
+	// Delete note
 	clipping.Delete("/:clippingId", clippingHandler.DeleteClipping)
+
 }
