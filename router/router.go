@@ -4,7 +4,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	clippingRoutes "github.com/jaredtconnor/clipper-app/internal/routes/clipping"
+	clippingRoutes "github.com/jaredtconnor/clipper-app/internals/routes/clipping"
 )
 
 func SetupRouter(app *fiber.App) {

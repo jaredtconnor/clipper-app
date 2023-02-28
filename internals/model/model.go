@@ -2,7 +2,7 @@ package model
 
 import (
 	"github.com/google/uuid"
-	"gorm.io/gorm"
+	// "gorm.io/gorm"
 )
 
 // Define the structure of a webclipping object
