@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "5a1f58ea-d517-401c-90c0-102eab86fcc6",
+		"name": "Clipping App Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20401469"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Something",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.postman.com/downloads/",
+							"type": "text"
+						},
+						{
+							"key": "contents",
+							"value": "<section style=\"overflow:hidden\" class=\"SectionStyles-sc-1r5eb44-0 fvDSjh\"><div class=\"container\"><div class=\"row\"><div class=\"col-12 col-lg-10 offset-lg-1 text-center mb-5\"><h1 class=\"mb-4\">Download Postman</h1><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN subtitle\">Download the app to get started using the Postman API Platform today. Or, if you prefer a browser experience, you can try the web version of Postman.</p></div></div></div><div class=\"container mb-3\"><div class=\"row\"><div class=\"col-12\"><div class=\"row\"><div class=\"col-12 col-md-6 col-lg-5 align-self-center pr-lg-5\"><div class=\"downloadsHero__BoxSection-sc-4y0gey-1 kjtAIh\"><h2 class=\"h3\">The Postman app</h2><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN\">Download the app to get started with the Postman API Platform.</p><div class=\"mb-3 d-none d-sm-block\"><div class=\"d-flex\"><a class=\"BaseButtonStyles-sc-18tp7ed-0 BaseButtonStyles__Primary-sc-18tp7ed-1 hSAEqA bmivsK mx-auto w-100 mb-4\" href=\"https://dl.pstmn.io/download/latest/win64\" data-test=\"download-the-app-windows-64\" id=\"download-the-app-windows-64\" target=\"_self\"><i class=\"pm-icon-windows pr-2 w-100\"></i>Windows 64-bit</a></div><small class=\"footnote mt-3 d-block\">By downloading and using Postman, I agree to the&nbsp;<a href=\"/legal/privacy-policy/\" data-test=\"downloads-privacy-policy\">Privacy Policy</a> and <a href=\"/legal/terms/\" data-test=\"downloads-eula\">Terms</a>.</small></div><div class=\"d-block d-sm-none\"><button class=\"BaseButtonStyles-sc-18tp7ed-0 BaseButtonStyles__Primary-sc-18tp7ed-1 hSAEqA bmivsK mx-auto w-100 mb-4\" data-test=\"\" id=\"\" target=\"_self\">Download the App</button><small><strong>To experience the best the Postman app has to offer, please download it on your desktop.</strong></small></div><div class=\"row d-flex flex-row align-baseline\"><div class=\"col-12\"><small class=\"footnote d-inline-flex\"><a href=\"/release-notes/postman-app/\" data-test=\"downloads-release-notes\">Release Notes</a>&nbsp;</small><span class=\"downloadsHero__Seperator-sc-4y0gey-0 cZtjFS\">·</span><small class=\"footnote d-inline-flex\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" data-test=\"downloads-product-roadmap\" href=\"https://github.com/postmanlabs/postman-app-support/projects/45?fullscreen=true\">Product Roadmap</a></small></div></div><p class=\"small d-none d-sm-block\"><small>Not your OS?<!-- --> Download for Mac (<a href=\"https://dl.pstmn.io/download/latest/osx_64\" aria-label=\"Not your OS? Download Postman App for Mac Intel Chip\" data-test=\"not-os-mac-intel-link\">Intel Chip</a>, <a href=\"https://dl.pstmn.io/download/latest/osx_arm64\" aria-label=\"Not your OS? Download Postman App for Mac Apple Chip\" data-test=\"not-os-mac-apple-link\">Apple Chip</a>) or Linux (<a href=\"https://dl.pstmn.io/download/latest/linux_64\" aria-label=\"Not your OS? Download Postman App for Linux x64\" data-test=\"not-os-linux-x64-link\">x64</a>, <a href=\"https://dl.pstmn.io/download/latest/linux_arm64\" aria-label=\"Not your OS? Download Postman App for Linux arm64\" data-test=\"not-os-linux-arm64-link\">arm64</a>)</small></p><div class=\"line\"><hr class=\"hrStyles__HRStyles-sc-1pq34xj-0 ljOMog\"></div><h3>Postman on the web</h3><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN\">Access the Postman API Platform through your web browser. Create a free account, and you're in.</p><a href=\"https://identity.getpostman.com/signup?continue=https%3A%2F%2Fgo.postman.co%2Fhome%3Fref_key=gjx8exC6SgCOoV1InxMVQh\" data-test=\"downloads-create-account-postman-on-the-web\" data-event=\"downloadsPageTryWebClicked\" data-event-prop=\"{&quot;cta_link_to&quot;:&quot;https://identity.getpostman.com/signup?continue=https%3A%2F%2Fgo.postman.co%2Fhome%3Fref_key=gjx8exC6SgCOoV1InxMVQh&quot;,&quot;cta_style&quot;:&quot;primary&quot;,&quot;cta_text&quot;:&quot;Try the Web Version&quot;,&quot;cta_type&quot;:&quot;button&quot;}\" class=\"BaseButtonStyles-sc-18tp7ed-0 BaseButtonStyles__Secondary-sc-18tp7ed-2 hSAEqA flcGRA w-100 text-center\" id=\"\" rel=\"noopener\" target=\"_blank\"> Try the Web Version</a><div class=\"line\"><hr class=\"hrStyles__HRStyles-sc-1pq34xj-0 ljOMog\"></div><h3>Postman Enterprise</h3><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN\">Postman Enterprise is designed for organizations who need to deploy Postman at scale.</p><a href=\"/postman-enterprise\" class=\"BaseLinkStyles-sc-7vt82q-0 BaseLinkStyles__ArrowLinkStyles-sc-7vt82q-1 ecyaqF jPfxSB\" target=\"_self\">Learn more →</a></div></div><div class=\"col-12 col-md-6 col-lg-7 align-self-center\" style=\"z-index:1\"><div class=\"screenshotContainer__ImageContainer-sc-lx5iyn-0 lfTiwA\"><img width=\"1280\" class=\"screenshot\" src=\"https://voyager.postman.com/screen/postman-product-screen-12-2022.svg\" alt=\"Screen grab of the Postman API Platform interface.\"></div></div></div></div></div></div></section>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/clipping",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clipping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Something",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.postman.com/downloads/",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "<section style=\"overflow:hidden\" class=\"SectionStyles-sc-1r5eb44-0 fvDSjh\"><div class=\"container\"><div class=\"row\"><div class=\"col-12 col-lg-10 offset-lg-1 text-center mb-5\"><h1 class=\"mb-4\">Download Postman</h1><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN subtitle\">Download the app to get started using the Postman API Platform today. Or, if you prefer a browser experience, you can try the web version of Postman.</p></div></div></div><div class=\"container mb-3\"><div class=\"row\"><div class=\"col-12\"><div class=\"row\"><div class=\"col-12 col-md-6 col-lg-5 align-self-center pr-lg-5\"><div class=\"downloadsHero__BoxSection-sc-4y0gey-1 kjtAIh\"><h2 class=\"h3\">The Postman app</h2><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN\">Download the app to get started with the Postman API Platform.</p><div class=\"mb-3 d-none d-sm-block\"><div class=\"d-flex\"><a class=\"BaseButtonStyles-sc-18tp7ed-0 BaseButtonStyles__Primary-sc-18tp7ed-1 hSAEqA bmivsK mx-auto w-100 mb-4\" href=\"https://dl.pstmn.io/download/latest/win64\" data-test=\"download-the-app-windows-64\" id=\"download-the-app-windows-64\" target=\"_self\"><i class=\"pm-icon-windows pr-2 w-100\"></i>Windows 64-bit</a></div><small class=\"footnote mt-3 d-block\">By downloading and using Postman, I agree to the&nbsp;<a href=\"/legal/privacy-policy/\" data-test=\"downloads-privacy-policy\">Privacy Policy</a> and <a href=\"/legal/terms/\" data-test=\"downloads-eula\">Terms</a>.</small></div><div class=\"d-block d-sm-none\"><button class=\"BaseButtonStyles-sc-18tp7ed-0 BaseButtonStyles__Primary-sc-18tp7ed-1 hSAEqA bmivsK mx-auto w-100 mb-4\" data-test=\"\" id=\"\" target=\"_self\">Download the App</button><small><strong>To experience the best the Postman app has to offer, please download it on your desktop.</strong></small></div><div class=\"row d-flex flex-row align-baseline\"><div class=\"col-12\"><small class=\"footnote d-inline-flex\"><a href=\"/release-notes/postman-app/\" data-test=\"downloads-release-notes\">Release Notes</a>&nbsp;</small><span class=\"downloadsHero__Seperator-sc-4y0gey-0 cZtjFS\">·</span><small class=\"footnote d-inline-flex\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" data-test=\"downloads-product-roadmap\" href=\"https://github.com/postmanlabs/postman-app-support/projects/45?fullscreen=true\">Product Roadmap</a></small></div></div><p class=\"small d-none d-sm-block\"><small>Not your OS?<!-- --> Download for Mac (<a href=\"https://dl.pstmn.io/download/latest/osx_64\" aria-label=\"Not your OS? Download Postman App for Mac Intel Chip\" data-test=\"not-os-mac-intel-link\">Intel Chip</a>, <a href=\"https://dl.pstmn.io/download/latest/osx_arm64\" aria-label=\"Not your OS? Download Postman App for Mac Apple Chip\" data-test=\"not-os-mac-apple-link\">Apple Chip</a>) or Linux (<a href=\"https://dl.pstmn.io/download/latest/linux_64\" aria-label=\"Not your OS? Download Postman App for Linux x64\" data-test=\"not-os-linux-x64-link\">x64</a>, <a href=\"https://dl.pstmn.io/download/latest/linux_arm64\" aria-label=\"Not your OS? Download Postman App for Linux arm64\" data-test=\"not-os-linux-arm64-link\">arm64</a>)</small></p><div class=\"line\"><hr class=\"hrStyles__HRStyles-sc-1pq34xj-0 ljOMog\"></div><h3>Postman on the web</h3><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN\">Access the Postman API Platform through your web browser. Create a free account, and you're in.</p><a href=\"https://identity.getpostman.com/signup?continue=https%3A%2F%2Fgo.postman.co%2Fhome%3Fref_key=gjx8exC6SgCOoV1InxMVQh\" data-test=\"downloads-create-account-postman-on-the-web\" data-event=\"downloadsPageTryWebClicked\" data-event-prop=\"{&quot;cta_link_to&quot;:&quot;https://identity.getpostman.com/signup?continue=https%3A%2F%2Fgo.postman.co%2Fhome%3Fref_key=gjx8exC6SgCOoV1InxMVQh&quot;,&quot;cta_style&quot;:&quot;primary&quot;,&quot;cta_text&quot;:&quot;Try the Web Version&quot;,&quot;cta_type&quot;:&quot;button&quot;}\" class=\"BaseButtonStyles-sc-18tp7ed-0 BaseButtonStyles__Secondary-sc-18tp7ed-2 hSAEqA flcGRA w-100 text-center\" id=\"\" rel=\"noopener\" target=\"_blank\"> Try the Web Version</a><div class=\"line\"><hr class=\"hrStyles__HRStyles-sc-1pq34xj-0 ljOMog\"></div><h3>Postman Enterprise</h3><p class=\"Paragraph__ParagraphStyles-sc-1pl8sx4-0 ePUYdN\">Postman Enterprise is designed for organizations who need to deploy Postman at scale.</p><a href=\"/postman-enterprise\" class=\"BaseLinkStyles-sc-7vt82q-0 BaseLinkStyles__ArrowLinkStyles-sc-7vt82q-1 ecyaqF jPfxSB\" target=\"_self\">Learn more →</a></div></div><div class=\"col-12 col-md-6 col-lg-7 align-self-center\" style=\"z-index:1\"><div class=\"screenshotContainer__ImageContainer-sc-lx5iyn-0 lfTiwA\"><img width=\"1280\" class=\"screenshot\" src=\"https://voyager.postman.com/screen/postman-product-screen-12-2022.svg\" alt=\"Screen grab of the Postman API Platform interface.\"></div></div></div></div></div></div></section>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/clipping/bb8d5658-ac15-45e3-9e75-d6356bf4933d",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clipping",
+						"bb8d5658-ac15-45e3-9e75-d6356bf4933d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
