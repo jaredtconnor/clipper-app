@@ -1,20 +1,16 @@
 package router
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+
+	"github.com/gofiber/fiber/v2/middleware/logger"
+	clippingRoutes "github.com/jaredtconnor/clipper-app/internal/routes/clipping"
+)
 
 func SetupRouter(app *fiber.App) {
 
-	app := fiber.App()
-	api := app.Group("api")
-
-	user := api.Group("user")
-
-	user.Get("/", func(c *fiber.Ctx) {})
-
-	user.Get("/:userId", func(c *fiber.Ctx) {})
-
-	user.Put("/:userId", func(c *fiber.Ctx) {})
-
 	api := app.Group("/api", logger.New())
+
+	clippingRoutes.SetupClippingRoutes(api)
 
 }

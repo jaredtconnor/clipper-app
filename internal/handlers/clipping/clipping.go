@@ -41,14 +41,15 @@ func CreateClipping(c *fiber.Ctx) error {
 	err = db.Create(&clipping).Error
 
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"status": "error", "message": "Could not create note", "data": err})
+		return c.Status(500).JSON(fiber.Map{"status": "error", "message": "Could not create clipping", "data": err})
 	}
 
-	return c.JSON(fiber.Map{"status": "success", "message": "Created Note", "data": clipping})
+	return c.JSON(fiber.Map{"status": "success", "message": "Created Clipping", "data": clipping})
 
 }
 
-func GetNote(c *fiber.Ctx) error {
+func GetClipping(c *fiber.Ctx) error {
+
 	db := database.DB
 	var clipping model.Clipping
 
@@ -60,15 +61,50 @@ func GetNote(c *fiber.Ctx) error {
 		return c.Status(404).JSON(fiber.Map{"status": "error", "message": "No clipping present", "data": nil})
 
 	}
+
+	return c.JSON(fiber.Map{"status": "success", "messgae": "Clipping found", "data": clipping})
+}
+
+func UpdateClipping(c *fiber.Ctx) error {
+
+	type updateClipping struct {
+		Title    string `json:"title"`
+		URL      string `json:"url"`
+		Contents string `json:"description"`
+	}
+
+	db := database.DB
+
+	var clipping model.Clipping
+
+	// Read clipping ID
+	id := c.Params("clippingId")
+
+	// Find the clipping in database
+	db.Find(&clipping, "id = ?", id)
+
+	// If no clipping present return error
+	if clipping.ID == uuid.Nil {
+		return c.Status(404).JSON(fiber.Map{"status": "error", "message": "No clipping present", "data": nil})
+	}
+
+	var updateClippingData updateClipping
+	err := c.BodyParser(&updateClippingData)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"status": "error", "message": "Review your input", "data": err})
+	}
+
+	clipping.Title = updateClippingData.Title
+	clipping.URL = updateClippingData.URL
+	clipping.Contents = updateClippingData.Contents
+
+	db.Save(&clipping)
 
 	return c.JSON(fiber.Map{"status": "success", "messgae": "Note found", "data": clipping})
-}
-
-func UpdateClipping(c *fiber.Ctx) {
 
 }
 
-func DeleteClipping(c *fiber.Ctx) {
+func DeleteClipping(c *fiber.Ctx) error {
 
 	db := database.DB
 	var clipping model.Clipping
@@ -78,7 +114,7 @@ func DeleteClipping(c *fiber.Ctx) {
 	db.Find(&clipping, "id = ?", id)
 
 	if clipping.ID == uuid.Nil {
-		return c.Status(404).JSON(fiber.Map{"status": "error", "message": "No clipping present", "data": nil})
+		return c.JSON(fiber.Map{"status": "error", "message": "No clipping present", "data": nil})
 	}
 
 	err := db.Delete(&clipping, "id = ?", id).Error
