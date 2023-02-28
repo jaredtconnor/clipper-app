@@ -10,5 +10,5 @@ type Clipping struct {
 	ID       uuid.UUID `gorm:"type:uuid"`
 	Title    string    `json:"title"`
 	URL      string    `json:"url"`
-	Contents string    `json:"description"`
+	Contents string    `json:"contents"`
 }
